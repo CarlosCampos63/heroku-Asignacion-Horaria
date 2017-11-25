@@ -1,0 +1,63 @@
+<div class="btn btn-default"id="btn-lectiva">Horas Lectivas</div>
+<div class="row" id="lectiva">
+  <div class="col-md-2">
+    <h2>1.- Seleccione un Curso</h2>
+    <%= render 'dropdown_cursos' %>
+  </div>
+  <div class="col-md-4" id="lista_asig" hidden>
+    <h2>
+      <i class="glyphicon glyphicon-menu-right" style="float: left"></i>
+      2.- Seleccione una Asignatura
+    </h2>
+    <table class="table table-striped">
+      <tbody  id="sin_asignar">
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-4" id="lista_profes" hidden>
+    <h2>
+      <i class="glyphicon glyphicon-menu-right" style="float: left"></i>
+      3.- Seleccione un Profesor
+      <i class="glyphicon glyphicon-menu-right" style="float: right"></i>
+    </h2>
+    <table class="table table-striped">
+      <tbody  id="profe_sin_asignar">
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2" style="text-align: center" id="input_horas" hidden>
+      <h2>
+        4.- Seleccione las Horas
+      </h2>
+      <input class="form-control" id="selec_horas"></input>
+  </div>
+</div>
+<br>
+<br>
+<div class="btn btn-default" id="btn-no-lectiva">Horas NO Lectivas</div>
+<div class="row" id="no-lectiva" hidden>
+  <div class="col-md-4">
+    <h2>1.- Selecciona un Profesor</h2>
+    <%= render 'dropdown_profes' %>
+  </div>
+  <div class="col-md-4" id="no-lect-asig" hidden>
+    <h2>
+      <i class="glyphicon glyphicon-menu-right" style="float: left"></i>
+      2.- Seleccione una asignaturas NO lectivas
+    </h2>
+    <table class="table table-striped">
+      <tbody  id="no-lec_sin_asignar">
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-2" id="horas_nl" hidden>
+    <h2>
+      <i class="glyphicon glyphicon-menu-right" style="float: left"></i>
+      3.- Horas
+    </h2>
+      <input class="form-control" id="selec_horas_2"></input>
+  </div>
+
+</div>
+<br>
+<br>

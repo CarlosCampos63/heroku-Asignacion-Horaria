@@ -1,0 +1,29 @@
+<%= form_for(@professor, remote: true) do |f| %>
+  <% if @professor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@professor.errors.count, "error") %> prohibited this professor from being saved:</h2>
+
+      <ul>
+      <% @professor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="row formpls">
+    <div class="col-md-8" >
+        <%= f.text_field :name, placeholder: "Nombre", class: "form-control" %>
+    </div>
+    <div class="col-md-4" >
+        <%= f.text_field :contrato, placeholder: "Hrs Contrato", class: "form-control" %>
+    </div>
+  </div>
+
+<div class="btn_form">
+  <%= f.submit "Crear Profesor", class: 'btn btn-primary' %>
+</div>
+
+
+
+<% end %>
