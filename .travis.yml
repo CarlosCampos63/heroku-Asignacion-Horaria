@@ -4,5 +4,3 @@ rvm:
 install:
 - gem install bundler
 - bundle install
-script:
-- bundle exec rake test
